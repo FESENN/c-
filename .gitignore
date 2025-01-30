@@ -1,0 +1,54 @@
+# macOS sistem dosyaları
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# Visual Studio ve .NET için
+*.swp
+*.*~
+project.lock.json
+.project
+.vs/
+.vscode/
+.idea/
+
+# Build çıktıları
+[Dd]ebug/
+[Dd]ebugPublic/
+[Rr]elease/
+[Rr]eleases/
+x64/
+x86/
+build/
+bld/
+[Bb]in/
+[Oo]bj/
+[Oo]ut/
+msbuild.log
+msbuild.err
+msbuild.wrn
+
+# NuGet paket dosyaları
+*.nupkg
+packages/
+*.nuget.props
+*.nuget.targets
+
+# MSTest test sonuçları
+[Tt]est[Rr]esult*/
+[Bb]uild[Ll]og.*
+
+# .NET Core
+project.lock.json
+project.fragment.lock.json
+artifacts/
+
+# Kullanıcıya özel dosyalar
+*.user
+*.userosscache
+*.sln.docstates
+
+# Geçici dosyalar
+*.tmp
+*.temp
+*.log 
