@@ -5,27 +5,28 @@ class Program
 {
     static void Main(string[] args)
     {
-        Sayilar sayilar = new Sayilar();
-        Syntax syntax = new Syntax();
-        List<int> sayiListesi = new List<int> { 1, 2, 3, 4, 5, 6, 7, 8, 9, 10 };
-        
-        Console.WriteLine("Tüm sayılar:");
-        foreach (int sayi in sayiListesi)
+        // Class tumClasslar = new Class();
+        // W3Scholls w3Scholls = new W3Scholls();
+        // tumClasslar.TumClasslariCagir();
+        // w3Scholls.TumDenemeler();
+        int sayac = SesliHarfiHarfler();
+        Console.WriteLine("Sayaç:  "+ sayac);
+
+    }
+
+    static int SesliHarfiHarfler()
+    {
+        int x = 0;
+        Console.WriteLine("bir cumle yada kelme giriniz : ");
+        string cumle = Console.ReadLine();
+        string sesliHarfler = "aeıiouAEIİOU";
+        foreach (char y in cumle)
         {
-            Console.Write(sayi + " " );
+            if (sesliHarfler.Contains(y))
+            {
+                x++;
+            }
         }
-        Console.WriteLine();
-        
-        List<int> ciftSayilar = sayilar.CiftSayilariBul(sayiListesi);
-        
-        Console.WriteLine("\nÇift sayılar:");
-        foreach (int ciftSayi in ciftSayilar)
-        {
-            Console.Write(ciftSayi + " ");
-        }
-        Console.WriteLine();
-        syntax.ConsoleYazdir();
-        int toplam = syntax.Topla(10,20);
-        Console.WriteLine( "Toplam Sayı:  "+toplam);
+        return x;
     }
 }
